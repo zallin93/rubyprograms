@@ -10,4 +10,8 @@ def try
         puts "no block"
     end
 end
-try 
+try # => "no block"
+try { puts 'hello' } # => "hello"
+try do
+    puts "hello" # => "hello"
+end
